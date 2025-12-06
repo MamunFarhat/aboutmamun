@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="YG9MnlYBjPk2Tr1hPk1iiwZi_B2SMsxOqo98zlyMPmg" />
+    <title>MAMUN AKHTAR | Full Stack Developer & Editor</title>
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">MAMUN<span class="logo-dot">.</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#news" class="nav-link">News</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <div class="language-selector">
+                    <button class="language-toggle" id="languageToggle" aria-label="Select language">
+                        <i class="fas fa-globe"></i>
+                        <span class="current-lang" id="currentLang">EN</span>
+                        <i class="fas fa-chevron-down lang-chevron"></i>
+                    </button>
+                    <div class="language-dropdown" id="languageDropdown">
+                        <div class="language-option" data-lang="en">
+                            <span class="lang-flag">🇺🇸</span>
+                            <span class="lang-name">English</span>
+                        </div>
+                        <div class="language-option" data-lang="es">
+                            <span class="lang-flag">🇪🇸</span>
+                            <span class="lang-name">Español</span>
+                        </div>
+                        <div class="language-option" data-lang="fr">
+                            <span class="lang-flag">🇫🇷</span>
+                            <span class="lang-name">Français</span>
+                        </div>
+                        <div class="language-option" data-lang="de">
+                            <span class="lang-flag">🇩🇪</span>
+                            <span class="lang-name">Deutsch</span>
+                        </div>
+                        <div class="language-option" data-lang="zh">
+                            <span class="lang-flag">🇨🇳</span>
+                            <span class="lang-name">中文</span>
+                        </div>
+                        <div class="language-option" data-lang="ja">
+                            <span class="lang-flag">🇯🇵</span>
+                            <span class="lang-name">日本語</span>
+                        </div>
+                        <div class="language-option" data-lang="ko">
+                            <span class="lang-flag">🇰🇷</span>
+                            <span class="lang-name">한국어</span>
+                        </div>
+                        <div class="language-option" data-lang="pt">
+                            <span class="lang-flag">🇵🇹</span>
+                            <span class="lang-name">Português</span>
+                        </div>
+                        <div class="language-option" data-lang="it">
+                            <span class="lang-flag">🇮🇹</span>
+                            <span class="lang-name">Italiano</span>
+                        </div>
+                        <div class="language-option" data-lang="ru">
+                            <span class="lang-flag">🇷🇺</span>
+                            <span class="lang-name">Русский</span>
+                        </div>
+                        <div class="language-option" data-lang="ar">
+                            <span class="lang-flag">🇸🇦</span>
+                            <span class="lang-name">العربية</span>
+                        </div>
+                        <div class="language-option" data-lang="hi">
+                            <span class="lang-flag">🇮🇳</span>
+                            <span class="lang-name">हिन्दी</span>
+                        </div>
+                    </div>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-sun theme-icon sun-icon"></i>
+                    <i class="fas fa-moon theme-icon moon-icon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="particles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge">GROUNDBREAKING CREATIVE PORTFOLIO</div>
+            <h1 class="hero-title">
+                <span class="title-line">COMMANDING</span>
+                <span class="title-line">ATTENTION.</span>
+            </h1>
+            <p class="hero-subtitle">I don't just design; I command digital attention. Crafting luxury experiences that dominate the screen.</p>
+            <div class="hero-location">
+                <span>Based in India</span>
+                <span>Full Stack & Editor</span>
+                <span>Est. 2023</span>
+            </div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+            <div class="hero-cta">
+                <button class="btn-email" id="openEmailModal">Email Pre-registration</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Discover the journey behind the work</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="https://drive.google.com/thumbnail?id=1aHohdafJv40H1rKgKxlCoyUQF0J2dZ9l&sz=w1000" alt="Mamun Akhtar" class="profile-image">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3 class="about-name">MD Mamun Akhtar</h3>
+                    <p class="lead">"I don't build websites; I build <span class="accent-text">empires</span>."</p>
+                    <p>I don't just design; I command digital attention. Crafting luxury experiences that dominate the screen. On the way to Full Stack Dev & Editor, I transform ideas into reality through innovative design and cutting-edge technology.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="3">0</div>
+                            <div class="stat-label">Featured Projects</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="2">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="24">0</div>
+                            <div class="stat-label">Technologies</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="section gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Gallery</h2>
+                <p class="section-subtitle">Visual showcase of my work</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Project Showcase</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Design Work</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Development</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Mobile Apps</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Web Projects</h4>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <div class="gallery-overlay">
+                        <h4>Branding</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A showcase of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://ecofoodwisee.lovable.app" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span class="project-link-text">View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://drive.google.com/thumbnail?id=16j1m2kNhG-OXIeFSSIcTeaOLSruoy6t4&sz=w1000" alt="EcoFoodWise" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">EcoFoodWise</h3>
+                        <p class="project-description">Strategy & Design - App Development</p>
+                        <div class="project-tags">
+                            <span class="tag">2025</span>
+                            <span class="tag">Strategy</span>
+                            <span class="tag">Design</span>
+                        </div>
+                        <a href="https://ecofoodwisee.lovable.app" target="_blank" class="project-view-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://youtu.be/xcaiSpelMow" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span class="project-link-text">View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://img.youtube.com/vi/xcaiSpelMow/hqdefault.jpg" alt="Dynamic Edit" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Dynamic Edit</h3>
+                        <p class="project-description">Interactive Content - Video Production</p>
+                        <div class="project-tags">
+                            <span class="tag">2025</span>
+                            <span class="tag">Video</span>
+                            <span class="tag">Editing</span>
+                        </div>
+                        <a href="https://youtu.be/xcaiSpelMow" target="_blank" class="project-view-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://www.facebook.com/share/p/1AECDuwM84/" target="_blank" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                    <span class="project-link-text">View Project</span>
+                                </a>
+                            </div>
+                        </div>
+                        <img src="https://scontent.frdp4-1.fna.fbcdn.net/v/t51.75761-15/508403709_18040790546635987_8867798595644940648_n.webp?stp=dst-jpg_tt6&_nc_cat=106&ccb=1-7&_nc_sid=127cfc&_nc_ohc=eD64iNmNEmYQ7kNvwEtosdm&_nc_oc=AdnnbXum8N2gkS7nG6ldjUbhme3jC2sM64x-VIjpsTVDYArNAZd-d2UIqchKRlnihYzQI_iMbReM2tCW4WeHzwQF&_nc_zt=23&_nc_ht=scontent.frdp4-1.fna&_nc_gid=tLP8iMsT9H8ar9OqfoJNhg&oh=00_Afld0txVqMDTdExb90Q07wsFZuuD6TeckgYedgJ4FFdCZQ&oe=69344DE6" alt="Cinematic Visuals" class="project-img">
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Cinematic Visuals</h3>
+                        <p class="project-description">Brand Identity - Art Direction</p>
+                        <div class="project-tags">
+                            <span class="tag">2024</span>
+                            <span class="tag">Branding</span>
+                            <span class="tag">Visuals</span>
+                        </div>
+                        <a href="https://www.facebook.com/share/p/1AECDuwM84/" target="_blank" class="project-view-btn">
+                            <span>View Project</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <p class="section-subtitle">Domain Expertise - Web & Digital, Brand Authority</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Next.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">TypeScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Tailwind CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Backend & Database</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="83"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">AWS & Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Design & Video Editing</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Figma</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Adobe Premiere</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">DaVinci Resolve</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Blender & Cinema 4D</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News & Events Section -->
+    <section id="news" class="section news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">News & Events</h2>
+                <p class="section-subtitle">Latest updates and milestones</p>
+            </div>
+            <div class="news-grid">
+                <div class="news-item">
+                    <div class="news-date">2025-01-15</div>
+                    <div class="news-badge">【NEWS】</div>
+                    <h3 class="news-title">EcoFoodWise Launch - Strategy & Design Excellence</h3>
+                    <p class="news-description">Proud to announce the launch of EcoFoodWise, a revolutionary app development project showcasing strategic thinking and exceptional design. This project demonstrates my expertise in creating impactful digital experiences.</p>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2025-01-10</div>
+                    <div class="news-badge">【EVENT】</div>
+                    <h3 class="news-title">Dynamic Edit - Video Production Mastery</h3>
+                    <p class="news-description">Released Dynamic Edit, showcasing my skills in interactive content creation and video production. This project highlights the fusion of technical expertise and creative vision.</p>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2024-12-20</div>
+                    <div class="news-badge">【NEWS】</div>
+                    <h3 class="news-title">Cinematic Visuals - Brand Identity Excellence</h3>
+                    <p class="news-description">Completed Cinematic Visuals project, demonstrating mastery in brand identity and art direction. This work showcases the ability to create compelling visual narratives that command attention.</p>
+                </div>
+                <div class="news-item">
+                    <div class="news-date">2023-01-01</div>
+                    <div class="news-badge">【EVENT】</div>
+                    <h3 class="news-title">Portfolio Established - Beginning the Journey</h3>
+                    <p class="news-description">Established in 2023, beginning the journey as a Full Stack Developer & Editor. Committed to building digital empires and commanding attention through exceptional work.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="partners" class="section partners-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Partners & Clients</h2>
+                <p class="section-subtitle">Trusted by leading organizations</p>
+            </div>
+            <div class="partners-grid">
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/google/D4AF37" alt="Google" class="partner-img">
+                    </div>
+                    <h4>Google</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/wix/D4AF37" alt="Wix" class="partner-img">
+                    </div>
+                    <h4>Wix</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://drive.google.com/thumbnail?id=1_mf2WFPMZR7jFO62xQJwuPRTIp8TzLS8&sz=w1000" alt="Adobe" class="partner-img">
+                    </div>
+                    <h4>Adobe</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/react/D4AF37" alt="React" class="partner-img">
+                    </div>
+                    <h4>React</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/nodedotjs/D4AF37" alt="Node.js" class="partner-img">
+                    </div>
+                    <h4>Node.js</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/tailwindcss/D4AF37" alt="Tailwind" class="partner-img">
+                    </div>
+                    <h4>Tailwind</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/nextdotjs/D4AF37" alt="Next.js" class="partner-img">
+                    </div>
+                    <h4>Next.js</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/vercel/D4AF37" alt="Vercel" class="partner-img">
+                    </div>
+                    <h4>Vercel</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/typescript/D4AF37" alt="TypeScript" class="partner-img">
+                    </div>
+                    <h4>TypeScript</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/mongodb/D4AF37" alt="MongoDB" class="partner-img">
+                    </div>
+                    <h4>MongoDB</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/figma/D4AF37" alt="Figma" class="partner-img">
+                    </div>
+                    <h4>Figma</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/github/D4AF37" alt="GitHub" class="partner-img">
+                    </div>
+                    <h4>GitHub</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/davinciresolve/D4AF37" alt="DaVinci" class="partner-img">
+                    </div>
+                    <h4>DaVinci</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/alightmotion/D4AF37" alt="Alight" class="partner-img">
+                    </div>
+                    <h4>Alight</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://drive.google.com/thumbnail?id=1X-ifianmLeJ9cAgmbhtt9q1TnXMyS-5z&sz=w1000" alt="VS Code" class="partner-img">
+                    </div>
+                    <h4>VS Code</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/python/D4AF37" alt="Python" class="partner-img">
+                    </div>
+                    <h4>Python</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://drive.google.com/thumbnail?id=1qtD3Myb4h1YXDL6CJPVejjruG6-YcL6N&sz=w1000" alt="AWS" class="partner-img">
+                    </div>
+                    <h4>AWS</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/docker/D4AF37" alt="Docker" class="partner-img">
+                    </div>
+                    <h4>Docker</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/framer/D4AF37" alt="Framer" class="partner-img">
+                    </div>
+                    <h4>Framer</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/blender/D4AF37" alt="Blender" class="partner-img">
+                    </div>
+                    <h4>Blender</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://drive.google.com/thumbnail?id=1wu92MA9SHKHTCIRzClMgY4KSH_9HPXlb&sz=w1000" alt="Premiere" class="partner-img">
+                    </div>
+                    <h4>Premiere</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://drive.google.com/thumbnail?id=17lDagDNYjeU0r02ATsAGF15VXiTvJHfD&sz=w1000" alt="Lightroom" class="partner-img">
+                    </div>
+                    <h4>Lightroom</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://cdn.simpleicons.org/cinema4d/D4AF37" alt="Cinema 4D" class="partner-img">
+                    </div>
+                    <h4>Cinema 4D</h4>
+                </div>
+                <div class="partner-item">
+                    <div class="partner-logo">
+                        <img src="https://drive.google.com/thumbnail?id=1iZLBhmNIqzYpKkxlWRP4p4yUMnQQyRt9&sz=w1000" alt="CapCut" class="partner-img">
+                    </div>
+                    <h4>CapCut</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Experience & Timeline</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - Present</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">B.Sc. Computer Science</h3>
+                        <h4 class="timeline-company">Malda College</h4>
+                        <p class="timeline-description">Pursuing Bachelor's degree in Computer Science, building expertise in full-stack development and software engineering.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Higher Secondary</h3>
+                        <h4 class="timeline-company">Naimouza High School</h4>
+                        <p class="timeline-description">Completed Higher Secondary education, laying the foundation for advanced studies in computer science.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Madhyamik</h3>
+                        <h4 class="timeline-company">Bright Institute</h4>
+                        <p class="timeline-description">Completed secondary education, marking the beginning of my journey in technology and creative work.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Let's create something amazing together</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Email</h4>
+                            <p><a href="mailto:mamunyt2006@gmail.com" class="contact-link">mamunyt2006@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Profession</h4>
+                            <p>Full Stack Developer & Editor</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/MamunFarhat" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/md.mamunakhtar.200610" target="_blank" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@aj_mamun_king" target="_blank" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                    <div class="newsletter">
+                        <h4>Stay Updated</h4>
+                        <p>Subscribe to receive updates on new projects and insights</p>
+                        <form class="newsletter-form" id="newsletterForm">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn-secondary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>MD MAMUN AKHTAR</h4>
+                    <p>Full Stack Developer & Editor. Creating digital experiences that command attention.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Use</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="footer-social">
+                        <a href="https://github.com/MamunFarhat" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/md.mamunakhtar.200610" target="_blank" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@aj_mamun_king" target="_blank" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MD MAMUN AKHTAR. Imperial Edition. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Email Pre-registration Modal -->
+    <div class="modal-overlay" id="emailModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeEmailModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2>Email Pre-registration</h2>
+                <p>Stay updated with my latest projects and insights</p>
+            </div>
+            <form class="modal-form" id="emailPreRegForm">
+                <div class="form-checkbox">
+                    <label>
+                        <input type="checkbox" required>
+                        <span>Yes, I would like to receive newsletters, information and promotions. I will be able to withdraw my consent at any time.</span>
+                    </label>
+                </div>
+                <div class="form-checkbox">
+                    <label>
+                        <input type="checkbox" required>
+                        <span>By clicking on Pre-register, I confirm that I am 12 years old or over and that I accept the Privacy Policy and Terms of Use.</span>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Enter your email address" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Pre-register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div class="modal-overlay" id="successModal">
+        <div class="modal-content success-content">
+            <button class="modal-close" id="closeSuccessModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>THANKS FOR SUBSCRIBING!</h2>
+            <p>You have successfully registered!</p>
+            <p class="success-note">More updates will be coming soon, please stay tuned!</p>
+            <div class="success-buttons">
+                <a href="#" class="btn btn-primary" id="headToDiscord">HEAD TO DISCORD</a>
+                <a href="#" class="btn btn-secondary" id="headToX">HEAD TO X</a>
+            </div>
+            <p class="success-footer">Join the community for the latest updates!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
